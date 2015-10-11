@@ -1,0 +1,54 @@
+{% extends '_base.html' %}
+
+{% block meta %}
+{% set header = header %}
+
+{% include '_meta.html' %}
+{% endblock %}
+
+{# Customize title here #}
+{% block title %}
+{% set header = header %}
+
+{% include '_title.html' %}
+{% endblock %}
+
+{# Customize intro here #}
+{% block intro %}
+{% set header = header %}
+
+{% include '_intro.html' %}
+{% endblock %}
+
+{# Customize content. Modify right side of equals sign to match tab names in spreadsheet #}
+{% block content %}
+{% set header = header %}
+{% set content = content %}
+{% set right_rail = right_rail %}
+{% set images = images %}
+{% set bylines = bylines %}
+
+{% include '_content.html' %}
+{% include "_global-variables.html" %}
+{% endblock %}
+
+{# Customize analytics #}
+{% block analytics %}
+{% include '_analytics.html' %}
+{% endblock %}
+
+{# Customize css #}
+{#
+{% block css %}
+{{ CSS.push('css/myfile.css')
+{% endblock css %}
+#}
+
+{# Customize js #}
+{#
+{% block js %}
+{{ js.push('js/myfile.js')
+{% endblock js %}
+#}
+
+
